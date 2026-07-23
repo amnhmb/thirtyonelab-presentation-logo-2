@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THIRTYONELAB® — WEAR WITH PRIDE Brand Identity (Ultra-Clean Borderless Mockups)</title>
+  <!-- Google Fonts: Montserrat & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Exact Color Palette from thirtyonelabcatalog-version2.0/style.css */
+      --color-black: #111111;
+      --color-red: #C51B27; /* Luxurious deep boutique red */
+      --color-red-hover: #A1141E;
+      --color-red-light: #FDF2F3;
+      --color-burgundy: #A1141E;
+      --color-cream: #FAF9F6; /* Milk / Warm sand off-white background */
+      --color-dark-bg: #111111;
+      --color-canvas: #FAF9F6;
+      --color-border: #E6E2DC;
+      --font-primary: 'Montserrat', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background-color: var(--color-canvas);
+      color: var(--color-black);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+      min-height: 100vh;
+    }
+
+    .presentation-board {
+      width: 100%;
+      max-width: 1200px;
+      background: #FFFFFF;
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-bottom: 35px;
+    }
+
+    /* Header Section: Primary Logo */
+    .primary-logo-section {
+      background: radial-gradient(circle at 50% 30%, #A1141E 0%, #6E0D14 70%, #3B060B 100%);
+      padding: 45px 25px 65px 25px;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-label {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 24px;
+    }
+
+    .primary-card {
+      background: #FFFFFF;
+      max-width: 680px;
+      margin: 0 auto;
+      border-radius: 20px;
+      padding: 32px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .primary-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .logo-icon-img {
+      height: 90px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .brand-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 3px;
+    }
+
+    .brand-name {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+
+    .text-black {
+      color: var(--color-black);
+      margin-right: 5px; /* Clear spacing so THIRTYONE and LAB never overlap */
+    }
+
+    .text-red {
+      color: var(--color-red);
+    }
+
+    .registered-mark {
+      font-size: 22px;
+      vertical-align: super;
+      margin-left: 3px;
+      color: var(--color-red);
+    }
+
+    .brand-subtitle {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: #666666;
+      margin-top: 3px;
+      text-transform: uppercase;
+    }
+
+    /* Grid Row 1: Secondary Logos & Logo Mark */
+    .grid-row-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding: 0 30px;
+    }
+
+    .card-secondary {
+      border-radius: 16px;
+      padding: 25px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 320px;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-secondary:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .bg-dark {
+      background-color: var(--color-dark-bg);
+      color: #FFFFFF;
+    }
+
+    .bg-burgundy {
+      background-color: var(--color-burgundy);
+      color: #FFFFFF;
+    }
+
+    .bg-white-inverted {
+      background-color: var(--color-cream);
+      color: var(--color-red);
+      border: 1px solid var(--color-border);
+    }
+
+    .card-secondary .section-label {
+      font-size: 11px;
+      margin-bottom: 0;
+      position: absolute;
+      top: 22px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .stacked-lockup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin: 0;
+      text-align: center;
+    }
+
+    .stacked-name {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+
+    .sub-tag {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      opacity: 0.85;
+      text-transform: uppercase;
+    }
+
+    /* Color Palette Section */
+    .palette-section {
+      padding: 0 30px;
+    }
+
+    .palette-card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 28px 30px;
+      border: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .swatch-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .swatch-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 14px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .swatch-item:hover .swatch-circle {
+      transform: scale(1.08);
+    }
+
+    .hex-code {
+      font-size: 16px;
+      font-weight: 700;
+      color: #222222;
+    }
+
+    .swatch-name {
+      font-size: 12px;
+      color: #777777;
+      margin-top: 4px;
+    }
+
+    /* Typography Section */
+    .typography-section {
+      padding: 0 30px;
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 16px;
+    }
+
+    .typo-banner {
+      background: var(--color-red);
+      color: #FFFFFF;
+      border-radius: 16px;
+      padding: 35px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .typo-heading {
+      font-size: 38px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      margin: 12px 0;
+    }
+
+    .typo-subheading {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      opacity: 0.95;
+      text-transform: uppercase;
+    }
+
+    .typo-body {
+      font-size: 14px;
+      line-height: 1.6;
+      opacity: 0.9;
+      max-width: 600px;
+    }
+
+    .typo-specimen {
+      background: #FFFFFF;
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .specimen-header {
+      font-size: 16px;
+      font-weight: 700;
+      color: #111111;
+    }
+
+    .weights-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin: 16px 0;
+      font-size: 13px;
+      color: #666666;
+    }
+
+    .aabb-display {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: flex-end;
+    }
+
+    .aabb-text {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    /* Mockups Section (Ultra-Clean Borderless Full Coverage) */
+    .mockups-section {
+      padding: 0 30px;
+    }
+
+    .mockups-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    .mockup-card {
+      border-radius: 16px;
+      overflow: hidden;
+      background: transparent;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      aspect-ratio: 4 / 3;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .mockup-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+    }
+
+    .mockup-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border: none;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #111;
+      color: #FFF;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 14px;
+      opacity: 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="presentation-board">
+    <!-- SECTION 1: PRIMARY LOGO -->
+    <div class="primary-logo-section">
+      <div class="section-label">PRIMARY LOGO</div>
+      <div class="primary-card">
+        <img class="logo-icon-img" src="Thirtyone_Lab_Master_HD.png" alt="ThirtyOne Lab Authentic Logo">
+        <div class="brand-title">
+          <div class="brand-name">
+            <span class="text-black">THIRTYONE</span><span class="text-red">LAB</span><span class="registered-mark">®</span>
+          </div>
+          <div class="brand-subtitle">WEAR WITH PRIDE</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: SECONDARY LOGOS & LOGO MARK -->
+    <div class="grid-row-3">
+      <!-- Dark Secondary Logo -->
+      <div class="card-secondary bg-dark">
+        <div class="section-label">SECONDARY LOGO</div>
+        <div class="stacked-lockup">
+          <img class="logo-icon-img" src="Thirtyone_Lab_Master_HD.png" alt="ThirtyOne Lab Logo"
+            style="height:75px; filter: brightness(0) invert(1);">
+          <div class="stacked-name">
+            <span style="color:#FFF; margin-right:5px;">THIRTYONE</span><span style="color:#C51B27">LAB</span><span class="registered-mark"
+              style="font-size:18px; color:#C51B27">®</span>
+          </div>
+          <div class="sub-tag">WEAR WITH PRIDE</div>
+        </div>
+      </div>
+
+      <!-- Burgundy Secondary Logo (Text-Only Centered) -->
+      <div class="card-secondary bg-burgundy">
+        <div class="section-label">SECONDARY LOGO</div>
+        <div class="stacked-lockup">
+          <div class="stacked-name">
+            <span style="color:#FFF; margin-right:5px;">THIRTYONE</span><span style="color:#FDF2F3">LAB</span><span class="registered-mark"
+              style="font-size:18px; color:#FDF2F3">®</span>
+          </div>
+          <div class="sub-tag">WEAR WITH PRIDE</div>
+        </div>
+      </div>
+
+      <!-- Box 3: LOGO MARK -->
+      <div class="card-secondary bg-white-inverted">
+        <div class="section-label" style="color: var(--color-red);">LOGO MARK</div>
+        <img class="logo-icon-img" src="Thirtyone_Lab_Master_HD.png" alt="ThirtyOne Lab Logo Mark"
+          style="height:120px; margin: 0;">
+      </div>
+    </div>
+
+    <!-- SECTION 3: COLOR PALETTE -->
+    <div class="palette-section">
+      <div class="palette-card">
+        <div class="section-label" style="color: #666;">COLOR PALETTE</div>
+        <div class="palette-grid">
+          <div class="swatch-item" onclick="copyHex('#C51B27')">
+            <div class="swatch-circle" style="background-color: #C51B27;"></div>
+            <div class="hex-code">#C51B27</div>
+            <div class="swatch-name">Boutique Red</div>
+          </div>
+          <div class="swatch-item" onclick="copyHex('#A1141E')">
+            <div class="swatch-circle" style="background-color: #A1141E;"></div>
+            <div class="hex-code">#A1141E</div>
+            <div class="swatch-name">Deep Crimson</div>
+          </div>
+          <div class="swatch-item" onclick="copyHex('#111111')">
+            <div class="swatch-circle" style="background-color: #111111;"></div>
+            <div class="hex-code">#111111</div>
+            <div class="swatch-name">ThirtyOne Black</div>
+          </div>
+          <div class="swatch-item" onclick="copyHex('#FAF9F6')">
+            <div class="swatch-circle" style="background-color: #FAF9F6; border: 1px solid var(--color-border);"></div>
+            <div class="hex-code">#FAF9F6</div>
+            <div class="swatch-name">Warm Sand</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: TYPOGRAPHY -->
+    <div class="typography-section">
+      <div class="typo-banner">
+        <div class="section-label" style="color: rgba(255,255,255,0.7)">TYPOGRAPHY</div>
+        <div class="typo-heading">HEADING EXAMPLE</div>
+        <div class="typo-subheading">WEAR WITH PRIDE</div>
+        <div class="typo-body">
+          THIRTYONELAB® delivers cutting-edge apparel & streetwear fashion, combining precision design with impactful
+          brand identity under the slogan WEAR WITH PRIDE. Montserrat bold typography ensures high legibility, modern
+          authority, and seamless adaptability across all media.
+        </div>
+      </div>
+
+      <div class="typo-specimen">
+        <div>
+          <div class="specimen-header">Montserrat Standard</div>
+          <div class="weights-list">
+            <div>Light 300</div>
+            <div>Medium 500</div>
+            <div>Bold 700</div>
+            <div>Heavy 800</div>
+            <div>Black 900</div>
+          </div>
+        </div>
+        <div class="aabb-display">
+          <div class="aabb-text" style="color: var(--color-burgundy);">AaBb</div>
+          <div class="aabb-text" style="color: var(--color-red);">AaBb</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5: BRAND APPLICATIONS (ULTRA-CLEAN BORDERLESS EDGE-TO-EDGE) -->
+    <div class="mockups-section">
+      <div class="section-label" style="color: #666; margin-bottom: 12px;">BRAND APPLICATIONS</div>
+      <div class="mockups-grid">
+        <div class="mockup-card">
+          <img src="mockup_business_card.png" alt="Business Cards Mockup borderless">
+        </div>
+        <div class="mockup-card">
+          <img src="mockup_tote_bag.png" alt="Tote Bag Mockup borderless">
+        </div>
+        <div class="mockup-card">
+          <img src="mockup_shopping_bag.png" alt="Shopping Bag Mockup borderless">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Copied hex code!</div>
+
+  <script>
+    function copyHex(hex) {
+      navigator.clipboard.writeText(hex).then(() => {
+        const toast = document.getElementById('toast');
+        toast.innerText = 'Copied ' + hex + ' to clipboard!';
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2000);
+      });
+    }
+  </script>
+</body>
+
+</html>
